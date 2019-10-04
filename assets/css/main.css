@@ -72,6 +72,11 @@ input, select, textarea {
 	appearance: none;
 }
 
+/* Look at this top tier bodge here */
+.fa-chess-king {
+	font-size: 200%;
+}
+
 /* Basic */
 
 	@-ms-viewport {
