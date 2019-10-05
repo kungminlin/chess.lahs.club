@@ -84,6 +84,7 @@ input, select, textarea {
 	right: 0;
 	background-color: rgba(0,0,0, 0.5);
 	padding: 20px;
+	height: 100%;
 }
 
 .text-overlay-right {
@@ -91,7 +92,7 @@ input, select, textarea {
 	top: 0;
 	bottom: 0;
 	right: 0;
-	width: 50%;
+	width: 100%;
 	background-color: rgba(0,0,0, 0.5);
 	padding: 20px;
 }
@@ -151,6 +152,18 @@ input, select, textarea {
 
 			html {
 				font-size: 11pt;
+			}
+
+		}
+
+		@media screen and (min-width: 736px) {
+			
+			.text-overlay-bottom {
+				height: unset;
+			}
+			
+			.text-overlay-right {
+				width: 50%;
 			}
 
 		}
