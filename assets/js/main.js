@@ -66,7 +66,7 @@
 			}
 
 	// Main.
-		var	delay = 225,
+		var	delay = 325,
 			locked = false;
 
 		// Methods.
