@@ -66,8 +66,10 @@
 			}
 
 	// Main.
-		var	delay = 525,
-			locked = false;
+		var	delay = 325, locked = false;
+		// document.getElementById("contact").onclick = function() {
+		// 	alert("button was clicked");
+		//  }​;
 
 		// Methods.
 			$main._show = function(id, initial) {

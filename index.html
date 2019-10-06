@@ -85,7 +85,7 @@
 									<ul class="icons">
 										<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
 										<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
-										<li><a href="https://www.instagram.com/chesswithmihir/?hl=en" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+										<li><a href="https://www.instagram.com/lahschess/" target="_blank" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
 										<li><a href="#" class="icon brands fa-github"><span class="label">Github</span></a></li>
 									</ul>
 								</section>
@@ -99,19 +99,26 @@
 									<div class="fields">
 										<div class="field half">
 											<label for="name">Name</label>
-											<input type="text" name="name" id="name" />
+											<input name="name" id="name" type="text"/>
 										</div>
-										<div class="field half">
-											<label for="email">Email</label>
-											<input type="text" name="email" id="email" />
-										</div>
+										
 										<div class="field">
 											<label for="message">Message</label>
-											<textarea name="message" id="message" rows="4"></textarea>
+											<textarea name="textarea" id="message" rows="4"></textarea>
 										</div>
 									</div>
 									<ul class="actions">
-										<li><input type="submit" value="Send Message" class="primary" /></li>
+										<input id="button" type="submit" name="button" onclick="myFunction();" value="SEND"/>
+										<script>
+											function myFunction(){
+												var name = "Sent by " + document.getElementById('name').value + " from chess.lahs.club";
+												var body = $("textarea").val();
+												
+												// window.open('mailto:100022407@mvla.net?subject=Chess Club Inquiry&body="" + body');
+
+												window.location.href = "mailto:100022407@mvla.net" + "?subject=Chess Club Inquiry" + "&body=" + body + "%0D%0A" + name;
+											};   
+										</script>
 										<li><input type="reset" value="Reset" /></li>
 									</ul>
 								</form>
