@@ -97,6 +97,10 @@ input, select, textarea {
 	padding: 20px;
 }
 
+.extras {
+	display: none;
+}
+
 /* Basic */
 
 	@-ms-viewport {
@@ -164,6 +168,10 @@ input, select, textarea {
 			
 			.text-overlay-right {
 				width: 50%;
+			}
+
+			.extras {
+				display: unset;
 			}
 
 		}
